@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Evelyn Lima Social Media</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <style>
       @font-face {
         font-family: 'Amsterdam';
@@ -43,26 +44,6 @@
         line-height: 1;
         color: #bc0812;
       }
-      .carousel {
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        gap: 20px;
-        z-index: 1;
-      }
-      .carousel a img {
-        width: 150px;
-        height: 220px;
-        object-fit: cover;
-        border: 2px solid #fff;
-        border-radius: 8px;
-        transition: transform 0.3s;
-      }
-      .carousel a img:hover {
-        transform: scale(1.1);
-      }
       video {
         position: fixed;
         top: 25px;
@@ -73,6 +54,31 @@
         z-index: 1;
         filter: brightness(1);
       }
+      .carousel {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 20px;
+        z-index: 1;
+      }
+      .carousel .card {
+        width: 150px;
+        height: 220px;
+        border-radius: 24px;
+        background-color: #84040b;
+        font-family: 'Questrial', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+      .carousel .card:hover {
+        transform: scale(1.1);
+      }
     </style>
   </head>
   <body>
@@ -82,11 +88,10 @@
     <div class="text-left">Evelyn Lima</div>
     <div class="text-left-2">Portfólio Digital</div>
     <div class="carousel">
-        <a href="#"><img src="" alt=""></a>
-        <a href="#"><img src="" alt=""></a>
-        <a href="#"><img src="" alt=""></a>
-        <a href="#"><img src="" alt=""></a>
-        <a href="#"><img src="" alt=""></a>
+      <div class="card">EP1<br>Prazer, Evelyn Lima</div>
+      <div class="card">EP2<br>Cobertura de Eventos:<br>Story em Real Time</div>
+      <div class="card">EP3<br>Criação de Reel</div>
+      <div class="card">EP4<br>Edição de material<br>enviado pelo cliente</div>
     </div>
   </body>
 </html>

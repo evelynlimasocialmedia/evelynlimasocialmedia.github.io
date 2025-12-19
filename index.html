@@ -64,20 +64,38 @@
         z-index: 1;
       }
       .carousel .card {
-        width: 150px;
-        height: 220px;
+        width: 180px;
+        height: 200px;
         border-radius: 24px;
         background-color: #84040b;
         font-family: 'Questrial', sans-serif;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         text-align: center;
+        padding: 10px 0;
         transition: transform 0.3s;
       }
       .carousel .card:hover {
         transform: scale(1.1);
+      }
+      .carousel .card b {
+        margin-bottom: 10px;
+      }
+      .carousel .card .text {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+      }
+      .carousel .card .inner {
+        width: 80%;
+        height: 60%;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 24px;
+        margin-bottom: 10px;
       }
     </style>
   </head>
@@ -88,10 +106,26 @@
     <div class="text-left">Evelyn Lima</div>
     <div class="text-left-2">Portfólio Digital</div>
     <div class="carousel">
-      <div class="card">EP1<br>Prazer, Evelyn Lima</div>
-      <div class="card">EP2<br>Cobertura de Eventos:<br>Story em Real Time</div>
-      <div class="card">EP3<br>Criação de Reel</div>
-      <div class="card">EP4<br>Edição de material<br>enviado pelo cliente</div>
+      <div class="card">
+        <b>EP1</b>
+        <div class="text">Prazer, Evelyn Lima</div>
+        <div class="inner"></div>
+      </div>
+      <div class="card">
+        <b>EP2</b>
+        <div class="text">Cobertura de Eventos:<br>Story em Real Time</div>
+        <div class="inner"></div>
+      </div>
+      <div class="card">
+        <b>EP3</b>
+        <div class="text">Criação de Reel</div>
+        <div class="inner"></div>
+      </div>
+      <div class="card">
+        <b>EP4</b>
+        <div class="text">Edição de material<br>enviado pelo cliente</div>
+        <div class="inner"></div>
+      </div>
     </div>
   </body>
 </html>

@@ -126,9 +126,9 @@
           align-items: center;
         }
         .red-image img {
-          width: 80%;
+          width: 100%;
           height: auto;
-          max-height: 100%;
+          max-width: 480px;
           object-fit: cover;
           filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
           animation: float-red 6s ease-in-out infinite;
@@ -281,6 +281,9 @@
           .red-text h1 { margin-bottom: 40px; }
         }
         @media (max-width: 768px) {
+          .red-image img {
+            max-width: 320px;
+          }
           h1 { font-size: 64px; }
           h2 { font-size: 22px; margin-top: -5%; }
           .social { right: 15px; bottom: 15px; }

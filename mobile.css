@@ -1,0 +1,132 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  height: auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  margin-top: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1,
+.container h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.social {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+}
+
+.center-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-55%) scale(1.4);
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.red {
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.red-text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.red-text h1,
+.red-text p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.red-image img {
+  display: none;
+}
+
+.white {
+  padding: 30px 20px;
+  height: auto;
+}
+
+.white h1 {
+  font-size: 36px;
+}
+
+.video-slot {
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.video-slot video {
+  width: 160px;
+  height: 300px;
+}
+
+.black {
+  min-height: 70vh;
+  height: auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.black-content p {
+  font-size: 20px;
+}
+
+.black-btn {
+  font-size: 18px;
+  padding: 14px 24px;
+}
+
+.footer {
+  height: auto;
+  padding: 15px 0;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

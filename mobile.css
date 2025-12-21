@@ -5,11 +5,11 @@ html, body {
 }
 
 section {
-  min-height: 100vh;
   height: auto;
 }
 
 .hero {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,7 @@ section {
 }
 
 .container {
-  margin-top: 20%;
+  margin-top: 30%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -52,17 +52,16 @@ h2 {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-55%) scale(1.4);
-  max-width: 320px;
-  width: 100%;
-  height: auto;
+  transform: translateX(-50%) ;
+  width: auto;
+  min-height: 80vh;
   pointer-events: none;
   z-index: 1;
 }
 
 .red {
   width: 100%;
-  padding: 40px 20px;
+  padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -121,6 +120,7 @@ h2 {
 }
 
 .footer {
+  min-height: 20vh;
   height: auto;
   padding: 15px 0;
 }

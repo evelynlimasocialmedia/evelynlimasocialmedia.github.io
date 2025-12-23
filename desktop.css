@@ -26,16 +26,16 @@ section {
   background: white;
 }
 .container {
-  animation: float 6s ease-in-out infinite;
   position: absolute;
-  top: 0%;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
+  animation: float 6s ease-in-out infinite;
 }
 @keyframes float {
-  0% { transform: translate(-50%, 0); }
-  50% { transform: translate(-50%, -10px); }
-  100% { transform: translate(-50%, 0); }
+  0% { top: 0; }
+  50% { top: -10px; }
+  100% { top: 0; }
 }
 h1 {
   font-size: 160px;
@@ -266,4 +266,5 @@ h2 {
   .center-image { height: 70%; }
   .red-text h1 { font-size: 42px; }
   .black-content p { font-size: 22px; }
+
 }
